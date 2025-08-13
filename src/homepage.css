@@ -1,0 +1,289 @@
+/* Header */
+.home-root {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.home-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #afafaf;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.account-chip {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Map + filters */
+.map-wrap {
+  padding: 12px 16px 0 16px;
+}
+
+.map {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map.placeholder {
+  background: #bdbdbd;
+  display: grid;
+  place-items: center;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.filters-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 0 12px 0;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5f5f5;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.filter label {
+  font-weight: 600;
+}
+
+/* Top providers banner */
+.top-banner {
+  background: #8a8a8a;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+
+.top-title {
+  font-weight: 600;
+}
+
+/* Online now section */
+.online-section {
+  padding: 18px 16px 6px 16px;
+}
+
+.online-title {
+  display: inline-block;
+  background: #d1d1d1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 240px;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.card-scroller::-webkit-scrollbar {
+  height: 8px;
+}
+.card-scroller::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.empty {
+  color: #666;
+  padding: 12px 0;
+}
+
+/* Vendor card */
+.vendor-card {
+  scroll-snap-align: start;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.vendor-photo {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vendor-info {
+  padding: 10px 12px 14px 12px;
+}
+
+.vendor-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.vendor-sub {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vendor-desc {
+  color: #444;
+  font-size: 13px;
+  line-height: 1.3;
+  max-height: 3.1em; /* ~2 lines */
+  overflow: hidden;
+}
+
+/* Online dot */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+}
+.dot.on { background: #16a34a; }   /* green */
+.dot.off { background: #9ca3af; }  /* gray */
+
+/* Contact footer */
+.contact-footer {
+  margin-top: 18px;
+  padding: 18px 16px 32px 16px;
+  background: hsl(0, 0%, 72%);
+  border-top: 1px solid #eee;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 16px;
+}
+.contact-label {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* Desktop tweaks */
+@media (min-width: 900px) {
+  .map { height: 380px; }
+  .contact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Online vendor section */
+.online-section {
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.online-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-scroller {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.vendor-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vendor-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.vendor-card p {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.empty {
+  font-style: italic;
+  color: #777;
+}
+
+/* Get Directions button */
+.directions-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.directions-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+.account-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.account-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.account-header {
+  margin-bottom: 1.5rem;
+}
+
+.account-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  font-weight: bold;
+  background-color: #b0b0b0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.value {
+  background-color: #b0b0b0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  min-width: 150px;
+  text-align: left;
+}
+
+.vendor-btn-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.vendor-btn {
+  background-color: #b0b0b0;
+  color: black;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.logout-btn {
+  margin-top: 1.5rem;
+  background-color: #808080;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #666;
+}

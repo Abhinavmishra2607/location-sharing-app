@@ -269,7 +269,7 @@ export default function HomePage() {
           <div>
             <div className="contact-label">Office</div>
             <div>LocalPin HQ</div>
-            <div>221B Baker Street, London</div>
+            <div>221B Ghaziabad, Uttarpradesh</div>
           </div>
           <div>
             <div className="contact-label">Phone</div>

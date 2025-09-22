@@ -15,7 +15,7 @@ function MapUpdater({ location }) {
   const map = useMap();
   useEffect(() => {
     if (location) {
-      map.setView([location.lat, location.lng], 13);
+      map.setView([12.8949,77.6028], 13);
     }
   }, [location, map]);
   return null;

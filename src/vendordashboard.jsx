@@ -80,7 +80,7 @@ export default function VendorDashboard() {
     setIsOnline(newOnline);
     try {
       await setDoc(
-        doc(db, "vendors", userId),
+        doc(db, "users", userId),
         {
           location: { lat: location[0], lng: location[1] },
           online: newOnline,
@@ -102,7 +102,7 @@ export default function VendorDashboard() {
 
     try {
       await setDoc(
-        doc(db, "vendors", userId),
+        doc(db, "users", userId),
         {
           serviceName: serviceName.trim(),
           serviceDescription: serviceDescription.trim(),
@@ -122,7 +122,7 @@ export default function VendorDashboard() {
   const saveLocation = async () => {
     try {
       await setDoc(
-        doc(db, "vendors", userId),
+        doc(db, "users", userId),
         {
           location: { lat: location[0], lng: location[1] },
           lastUpdated: new Date(),

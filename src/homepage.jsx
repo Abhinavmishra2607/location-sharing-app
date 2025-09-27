@@ -136,7 +136,7 @@ export default function HomePage() {
     <div className="home-root">
       {/* Header */}
       <header className="home-header">
-        <div className="brand">LocalPin</div>
+        <div className="brand">Venlo</div>
         <button className="account-chip" onClick={() => navigate("/account")}>
           Acc.
         </button>
@@ -268,17 +268,17 @@ export default function HomePage() {
         <div className="contact-grid">
           <div>
             <div className="contact-label">Office</div>
-            <div>LocalPin HQ</div>
+            <div>Venlo HQ</div>
             <div>221B Ghaziabad, Uttarpradesh</div>
           </div>
           <div>
             <div className="contact-label">Phone</div>
-            <div>+91 98765 43210</div>
+            <div>+91 98718 28606</div>
             <div>Landline: 011-23456789</div>
           </div>
           <div>
             <div className="contact-label">Email</div>
-            <div>support@localpin.example</div>
+            <div>support@Venlo.example</div>
           </div>
         </div>
       </footer>

@@ -139,7 +139,7 @@ export default function VendorDashboard() {
   return (
     <div className="vendor-dashboard">
       <header className="vendor-header">
-        <div className="logo">LocalPin</div>
+        <div className="logo">Venlo</div>
         <h1>Vendor Dashboard</h1>
       </header>
 
